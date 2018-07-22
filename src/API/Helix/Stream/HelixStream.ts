@@ -32,6 +32,30 @@ export default class HelixStream {
 		return this._client.helix.users.getUserById(this._data.user_id);
 	}
 
+	get id() {
+		return this._data.id;
+	}
+
+	get communityIds() {
+		return this._data.community_ids;
+	}
+
+	get title() {
+		return this._data.title;
+	}
+
+	get language() {
+		return this._data.language;
+	}
+
+	get thumbnailUrl() {
+		return this._data.thumbnail_url;
+	}
+
+	get gameId() {
+		return this._data.game_id;
+	}
+
 	// TODO implement stream -> game
 	// async getGame() {
 	// }
