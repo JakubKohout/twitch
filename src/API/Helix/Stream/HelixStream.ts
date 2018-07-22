@@ -32,6 +32,10 @@ export default class HelixStream {
 		return this._client.helix.users.getUserById(this._data.user_id);
 	}
 
+	get userId() {
+		return this._data.user_id;
+	}
+
 	get id() {
 		return this._data.id;
 	}
